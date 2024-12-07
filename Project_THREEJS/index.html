@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js Project</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+        #support-message {
+            text-align: center;
+            font-size: 20px;
+            color: red;
+            display: none;
+        }
+        #memory-usage {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-size: 16px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="three-canvas"></canvas>
+    <div id="support-message">Ваш браузер не поддерживает WebGL.</div>
+    <div id="memory-usage"></div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
